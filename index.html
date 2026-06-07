@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Giga — Ekibinizin Güç Merkezi. Görevleri takip edin, projeleri yönetin, ekibinizi organize edin. Tek platform, sınırsız verimlilik." />
+  <meta property="og:title" content="Giga — Ekibinizin Güç Merkezi" />
+  <meta property="og:description" content="Görevleri takip edin, projeleri yönetin, ekibinizi organize edin." />
+  <title>Giga — Ekibinizin Güç Merkezi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg-mesh" aria-hidden="true">
+    <div class="mesh-orb mesh-orb-1"></div>
+    <div class="mesh-orb mesh-orb-2"></div>
+    <div class="mesh-orb mesh-orb-3"></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar" role="banner">
+    <nav class="nav-container" role="navigation" aria-label="Ana navigasyon">
+      <a href="#" class="nav-logo" aria-label="Giga Ana Sayfa">
+        <span class="logo-icon" aria-hidden="true">⚡</span>
+        <span class="logo-text">Giga</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#features" class="nav-link">Özellikler</a></li>
+        <li><a href="#download" class="nav-link">İndir</a></li>
+        <li><a href="#server" class="nav-link">Sunucu Kur</a></li>
+        <li><a href="#faq" class="nav-link">SSS</a></li>
+        <li>
+          <a href="http://localhost:5173" class="nav-cta" id="nav-cta-btn">Başla →</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-badge" role="text">
+          <span class="badge-dot" aria-hidden="true"></span>
+          Yeni · v1.0.0 çıktı
+        </div>
+        <h1 class="hero-title" id="hero-heading">
+          Ekibinizin<br />
+          <span class="gradient-text">Güç Merkezi</span>
+        </h1>
+        <p class="hero-subtitle">
+          Görevleri takip edin, projeleri yönetin, ekibinizi organize edin.<br />
+          Tek platform, sınırsız verimlilik.
+        </p>
+        <div class="hero-actions">
+          <a href="http://localhost:5173" class="btn btn-primary" id="hero-web-btn" aria-label="Web uygulamasını kullan">
+            🌐 Web Uygulamasını Kullan
+          </a>
+          <a href="#download" class="btn btn-secondary" id="hero-download-btn" aria-label="Uygulamayı indir">
+            ⬇️ İndir
+          </a>
+        </div>
+        <div class="hero-stats" aria-label="Uygulama istatistikleri">
+          <div class="stat">
+            <span class="stat-value" data-count="50">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Kullanıcı</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value" data-count="200">0</span><span class="stat-suffix">+</span>
+            <span class="stat-label">Proje</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat">
+            <span class="stat-value" data-count="99">0</span><span class="stat-suffix">%</span>
+            <span class="stat-label">Uptime</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero visual: floating mockup cards -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="mockup-container">
+          <div class="mockup-card mockup-main float-anim">
+            <div class="mockup-header">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-title">Proje Panosu</span>
+            </div>
+            <div class="mockup-body">
+              <div class="task-item task-done">
+                <span class="task-check">✓</span>
+                <span>Landing page tasarımı</span>
+                <span class="task-tag design">Tasarım</span>
+              </div>
+              <div class="task-item task-progress">
+                <span class="task-check progress">◷</span>
+                <span>Backend API geliştirme</span>
+                <span class="task-tag dev">Dev</span>
+              </div>
+              <div class="task-item">
+                <span class="task-check empty">○</span>
+                <span>Test yazma</span>
+                <span class="task-tag qa">QA</span>
+              </div>
+              <div class="task-item">
+                <span class="task-check empty">○</span>
+                <span>Deployment pipeline</span>
+                <span class="task-tag ops">Ops</span>
+              </div>
+            </div>
+            <div class="mockup-progress-bar">
+              <div class="progress-label">
+                <span>Sprint 3</span>
+                <span>60%</span>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" style="width:60%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mockup-card mockup-mini float-anim-delay">
+            <div class="mini-icon">👥</div>
+            <div class="mini-info">
+              <span class="mini-label">Aktif Ekip</span>
+              <span class="mini-value">8 üye online</span>
+            </div>
+            <div class="mini-avatars">
+              <div class="avatar av1">A</div>
+              <div class="avatar av2">B</div>
+              <div class="avatar av3">C</div>
+              <div class="avatar av-more">+5</div>
+            </div>
+          </div>
+          <div class="mockup-card mockup-notif float-anim-slow">
+            <span class="notif-icon">🔔</span>
+            <div class="notif-content">
+              <strong>Yeni görev atandı</strong>
+              <p>API entegrasyonu — Ali tarafından</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features" id="features" aria-labelledby="features-heading">
+      <div class="section-container">
+        <div class="section-header fade-in">
+          <span class="section-badge">Özellikler</span>
+          <h2 class="section-title" id="features-heading">
+            Her Şey <span class="gradient-text">Tek Yerde</span>
+          </h2>
+          <p class="section-subtitle">İhtiyacınız olan tüm proje yönetim araçları, zarif bir arayüzde.</p>
+        </div>
+        <div class="features-grid">
+          <article class="feature-card fade-in" aria-label="Görev Yönetimi">
+            <div class="feature-icon" aria-hidden="true">📋</div>
+            <h3 class="feature-title">Görev Yönetimi</h3>
+            <p class="feature-desc">Görevleri oluştur, ata ve takip et. Kanban panosu ile ilerlemeyi görselleştir.</p>
+            <div class="feature-glow" aria-hidden="true"></div>
+          </article>
+          <article class="feature-card fade-in" aria-label="Proje Takibi">
+            <div class="feature-icon" aria-hidden="true">📁</div>
+            <h3 class="feature-title">Proje Takibi</h3>
+            <p class="feature-desc">Projelerinizi organize edin. Milestone'ları ve deadline'ları kolayca yönetin.</p>
+            <div class="feature-glow" aria-hidden="true"></div>
+          </article>
+          <article class="feature-card fade-in" aria-label="Ekip Yönetimi">
+            <div class="feature-icon" aria-hidden="true">👥</div>
+            <h3 class="feature-title">Ekip Yönetimi</h3>
+            <p class="feature-desc">Ekip üyelerini kolayca yönetin, roller atayın ve iş yükü dengeleyin.</p>
+            <div class="feature-glow" aria-hidden="true"></div>
+          </article>
+          <article class="feature-card fade-in" aria-label="Bildirimler">
+            <div class="feature-icon" aria-hidden="true">🔔</div>
+            <h3 class="feature-title">Bildirimler</h3>
+            <p class="feature-desc">Anlık bildirimlerle her şeyden haberdar olun. Hiçbir güncellemeyi kaçırmayın.</p>
+            <div class="feature-glow" aria-hidden="true"></div>
+          </article>
+          <article class="feature-card fade-in" aria-label="İstatistikler">
+            <div class="feature-icon" aria-hidden="true">📊</div>
+            <h3 class="feature-title">İstatistikler</h3>
+            <p class="feature-desc">Detaylı raporlar ve analizlerle ekip performansını optimize edin.</p>
+            <div class="feature-glow" aria-hidden="true"></div>
+          </article>
+          <article class="feature-card fade-in" aria-label="Güvenli">
+            <div class="feature-icon" aria-hidden="true">🔒</div>
+            <h3 class="feature-title">Güvenli</h3>
+            <p class="feature-desc">Kurumsal düzeyde güvenlik. Verileriniz kendi sunucunuzda, tamamen sizin kontrolünüzde.</p>
+            <div class="feature-glow" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section class="download" id="download" aria-labelledby="download-heading">
+      <div class="section-container">
+        <div class="section-header fade-in">
+          <span class="section-badge">İndir</span>
+          <h2 class="section-title" id="download-heading">
+            Giga'yı <span class="gradient-text">İndirin</span>
+          </h2>
+          <p class="section-subtitle">macOS ve Windows için native uygulama. Hızlı, güvenli, offline.</p>
+        </div>
+        <div class="download-cards">
+          <!-- macOS -->
+          <article class="download-card fade-in" aria-label="macOS için indir">
+            <div class="download-card-inner">
+              <div class="download-os-icon" aria-hidden="true">
+                <svg width="64" height="64" viewBox="0 0 814 1000" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M788.1 340.9c-5.8 4.5-108.2 62.2-108.2 190.5 0 148.4 130.3 200.9 134.2 202.2-.6 3.2-20.7 71.9-68.7 141.9-42.8 61.6-87.5 123.1-155.5 123.1s-85.5-39.5-164-39.5c-76 0-103.7 40.8-165.9 40.8s-105-57.8-155.5-127.4C46 790.7 0 663 0 541.8c0-207.5 135.4-317.3 269-317.3 70.1 0 128.4 46.4 172.5 46.4 42.8 0 109.7-49.1 189.2-49.1 30.4 0 110.1 2.6 170.6 87.3zm-174.6-209.9c33.1-39.5 56.3-94.4 56.3-149.4 0-7.7-.6-15.4-1.9-21.7-53.7 2-117.2 35.7-155.5 81.8-30.4 35.1-59.5 90-59.5 145.7 0 8.4 1.3 16.7 1.9 19.4 3.2.6 8.4 1.3 13.6 1.3 48.4 0 109.1-32.5 145.1-77.1z"/>
+                </svg>
+              </div>
+              <h3 class="download-os-name">macOS İndir</h3>
+              <p class="download-version">Apple Silicon &amp; Intel — v1.0.0</p>
+              <a href="/downloads/Giga-1.0.0-arm64.dmg"
+                 class="btn btn-download"
+                 id="download-macos-btn"
+                 aria-label="macOS için Giga 1.0.0 indirin">
+                <span class="btn-download-icon" aria-hidden="true">⬇️</span>
+                macOS için İndir
+                <span class="btn-shine" aria-hidden="true"></span>
+              </a>
+              <p class="download-req">macOS 12 Monterey veya üzeri</p>
+            </div>
+          </article>
+          <!-- Windows -->
+          <article class="download-card fade-in" aria-label="Windows için indir">
+            <div class="download-card-inner">
+              <div class="download-os-icon" aria-hidden="true">
+                <svg width="64" height="64" viewBox="0 0 88 88" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M0 12.402l35.687-4.86.016 34.423-35.67.203zm35.67 33.529l.028 34.453L.028 75.48.026 45.7zm4.326-38.951L87.314 0v41.527l-47.318.376zm47.329 39.34-.011 41.34-47.318-6.678-.066-34.739z"/>
+                </svg>
+              </div>
+              <h3 class="download-os-name">Windows İndir</h3>
+              <p class="download-version">Windows 10/11 — v1.0.0</p>
+              <a href="/downloads/Giga Setup 1.0.0.exe"
+                 class="btn btn-download btn-download-win"
+                 id="download-windows-btn"
+                 aria-label="Windows için Giga 1.0.0 indirin">
+                <span class="btn-download-icon" aria-hidden="true">⬇️</span>
+                Windows için İndir
+                <span class="btn-shine" aria-hidden="true"></span>
+              </a>
+              <p class="download-req">Windows 10 (64-bit) veya üzeri</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVER SETUP -->
+    <section class="server-setup" id="server" aria-labelledby="server-heading">
+      <div class="section-container">
+        <div class="section-header fade-in">
+          <span class="section-badge">Sunucu</span>
+          <h2 class="section-title" id="server-heading">
+            🖥️ Kendi Sunucunuzu <span class="gradient-text">Kurun</span>
+          </h2>
+          <p class="section-subtitle">
+            Herkes kendi bilgisayarını Giga sunucusu yapabilir.<br />
+            Kurulduktan sonra aynı ağdaki herkes bağlanabilir.
+          </p>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs fade-in" role="tablist" aria-label="İşletim sistemi seçimi">
+          <button class="tab-btn tab-active"
+                  id="tab-mac"
+                  role="tab"
+                  aria-selected="true"
+                  aria-controls="panel-mac">
+            🍎 macOS / Linux
+          </button>
+          <button class="tab-btn"
+                  id="tab-win"
+                  role="tab"
+                  aria-selected="false"
+                  aria-controls="panel-win">
+            🪟 Windows
+          </button>
+        </div>
+
+        <!-- macOS panel -->
+        <div class="tab-panel" id="panel-mac" role="tabpanel" aria-labelledby="tab-mac">
+          <div class="steps-grid">
+            <article class="step-card fade-in" aria-label="Adım 1: İndir">
+              <div class="step-badge" aria-label="Adım 1">1</div>
+              <div class="step-icon" aria-hidden="true">⬇️</div>
+              <h3 class="step-title">İndir</h3>
+              <p class="step-desc">Giga'yı indirin ve <code>.dmg</code> dosyasını açın.</p>
+            </article>
+            <article class="step-card fade-in" aria-label="Adım 2: Kopyala">
+              <div class="step-badge" aria-label="Adım 2">2</div>
+              <div class="step-icon" aria-hidden="true">📂</div>
+              <h3 class="step-title">Kopyala</h3>
+              <p class="step-desc"><code>Giga.app</code> dosyasını <strong>Applications</strong> klasörüne sürükleyin.</p>
+            </article>
+            <article class="step-card fade-in" aria-label="Adım 3: Çalıştır">
+              <div class="step-badge" aria-label="Adım 3">3</div>
+              <div class="step-icon" aria-hidden="true">⚙️</div>
+              <h3 class="step-title">Çalıştır</h3>
+              <p class="step-desc">Terminal açın ve şu komutu çalıştırın:</p>
+              <div class="code-block" role="region" aria-label="Terminal komutu">
+                <code>xattr -cr /Applications/Giga.app</code>
+                <button class="copy-btn" aria-label="Komutu kopyala" data-copy="xattr -cr /Applications/Giga.app">
+                  📋
+                </button>
+              </div>
+            </article>
+            <article class="step-card fade-in" aria-label="Adım 4: Sunucu Başlat">
+              <div class="step-badge" aria-label="Adım 4">4</div>
+              <div class="step-icon" aria-hidden="true">🚀</div>
+              <h3 class="step-title">Sunucu Başlat</h3>
+              <p class="step-desc">Uygulamayı açın. Artık sunucu olarak çalışıyor!</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Windows panel -->
+        <div class="tab-panel hidden" id="panel-win" role="tabpanel" aria-labelledby="tab-win">
+          <div class="steps-grid steps-grid-3">
+            <article class="step-card fade-in" aria-label="Adım 1: İndir">
+              <div class="step-badge" aria-label="Adım 1">1</div>
+              <div class="step-icon" aria-hidden="true">⬇️</div>
+              <h3 class="step-title">İndir</h3>
+              <p class="step-desc"><code>Giga Setup 1.0.0.exe</code> dosyasını indirin.</p>
+            </article>
+            <article class="step-card fade-in" aria-label="Adım 2: Kur">
+              <div class="step-badge" aria-label="Adım 2">2</div>
+              <div class="step-icon" aria-hidden="true">📦</div>
+              <h3 class="step-title">Kur</h3>
+              <p class="step-desc">Kurulum sihirbazını takip edin ve kurulumu tamamlayın.</p>
+            </article>
+            <article class="step-card fade-in" aria-label="Adım 3: Çalıştır">
+              <div class="step-badge" aria-label="Adım 3">3</div>
+              <div class="step-icon" aria-hidden="true">🚀</div>
+              <h3 class="step-title">Çalıştır</h3>
+              <p class="step-desc">Giga'yı açın. Ağdaki herkes IP adresinizle bağlanabilir.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- IP info box -->
+        <div class="info-box fade-in" role="note" aria-label="IP adresi bilgisi">
+          <span class="info-icon" aria-hidden="true">💡</span>
+          <div class="info-text">
+            <strong>IP adresinizi bulmak için:</strong><br />
+            <span class="info-os">🍎 macOS →</span> System Settings &gt; Wi-Fi &gt; Details
+            &nbsp;|&nbsp;
+            <span class="info-os">🪟 Windows →</span> <code>ipconfig</code> komutunu çalıştırın
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq" aria-labelledby="faq-heading">
+      <div class="section-container">
+        <div class="section-header fade-in">
+          <span class="section-badge">SSS</span>
+          <h2 class="section-title" id="faq-heading">
+            Sık Sorulan <span class="gradient-text">Sorular</span>
+          </h2>
+          <p class="section-subtitle">Aklınızdaki soruların cevapları burada.</p>
+        </div>
+        <div class="faq-list fade-in" role="list">
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-1"
+                    id="faq-btn-1">
+              <span>Hasar görmüş uygulamayı nasıl açarım?</span>
+              <span class="faq-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-btn-1" hidden>
+              <p>Terminal açın ve şu komutu çalıştırın:</p>
+              <div class="code-block">
+                <code>xattr -cr /Applications/Giga.app</code>
+                <button class="copy-btn" aria-label="Komutu kopyala" data-copy="xattr -cr /Applications/Giga.app">📋</button>
+              </div>
+              <p>Bu, macOS'un güvenlik engelini kaldırır.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-2"
+                    id="faq-btn-2">
+              <span>Kaç kişi aynı sunucuya bağlanabilir?</span>
+              <span class="faq-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-btn-2" hidden>
+              <p>Sunucunuzun kapasitesine göre değişir. Tipik bir ofis bilgisayarı <strong>50+ kullanıcıyı</strong> rahatlıkla destekler.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-3"
+                    id="faq-btn-3">
+              <span>Hangi portları açmam gerekiyor?</span>
+              <span class="faq-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-btn-3" hidden>
+              <p>Backend için <strong>8000</strong>, frontend için <strong>5173</strong> portunu yerel ağınızda açık tutun.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-4"
+                    id="faq-btn-4">
+              <span>Verilerim nerede saklanıyor?</span>
+              <span class="faq-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-btn-4" hidden>
+              <p>Tüm veriler kendi sunucunuzda <strong>SQLite veritabanında</strong> saklanır. Hiçbir veri dışarı çıkmaz.</p>
+            </div>
+          </div>
+
+          <div class="faq-item" role="listitem">
+            <button class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq-answer-5"
+                    id="faq-btn-5">
+              <span>Uygulama internetsiz çalışır mı?</span>
+              <span class="faq-chevron" aria-hidden="true">▾</span>
+            </button>
+            <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-btn-5" hidden>
+              <p>Evet! Giga tamamen <strong>yerel ağda</strong> çalışır, internet bağlantısı gerektirmez.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo" aria-label="Giga Ana Sayfa">
+          <span class="logo-icon" aria-hidden="true">⚡</span>
+          <span class="logo-text">Giga</span>
+        </a>
+        <p class="footer-tagline">Ekibinizin Güç Merkezi</p>
+      </div>
+      <nav class="footer-links" aria-label="Alt navigasyon">
+        <a href="#" class="footer-link">Gizlilik Politikası</a>
+        <a href="#faq" class="footer-link">SSS</a>
+      </nav>
+      <p class="footer-copy">
+        Giga &copy; 2025 — v1.0.0 — Tüm hakları saklıdır
+      </p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+landing_deploy/.gitignore
+*.dmg
+*.exe
+*.zip
